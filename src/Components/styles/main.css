@@ -1,0 +1,112 @@
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #36393e;
+    color: white;
+    width: 950px;
+}
+.maincontent{
+    display: flex;
+    flex-direction: column;
+    background-color: #1e2124;
+}
+.chatBox{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 79.4vh;
+    width: 100%;
+}
+@media(max-width: 1200px){
+    .chatBox{
+       max-width: 700px;
+    }
+}
+.chatBox::-webkit-scrollbar { 
+    display: none;
+}
+.maintitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    gap: 400px;
+}
+
+.GoThreeBars{
+    display: none;
+}
+
+.FaChevronDown{
+    display: none;
+}
+
+@media(max-width: 1100px){
+    .GoThreeBars{
+        display: flex;
+    }
+}
+@media(max-width: 700px){
+    .FaChevronDown{
+        display: flex;
+    }
+}
+@media(max-width: 1200px){
+    .maintitle{
+        gap: 100px;
+    }
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: 0px;
+    height: 49px;
+    gap: 50px;
+}
+.input input{
+    width: 70%;
+    height: 25px;
+    border: 2px solid #1e2124;
+    border-radius: 10px;
+    background-color: #36393e;
+    color: white;
+    outline: none;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+}
+.userdetails{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px
+}
+.userpic{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.messageContent{
+    display: flex;
+    position: relative;
+    bottom: 30px;
+    left: 50px;
+}
+.messageTime{
+    font-size: 12px;
+}
+.messageActions{
+
+}
